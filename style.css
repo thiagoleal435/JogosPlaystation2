@@ -12,12 +12,14 @@ main{
 }
 
 table{
+    background-color: white;
     border: solid 5px white;
     border-collapse: collapse;
     width: 100%;
 }
 
 .titulo-table{
+    background-color: black;
     border-bottom: solid 5px white;
     font-size: 2em;
     color: white;
@@ -60,4 +62,6 @@ img{
 
 .descricao-jogo{
     background-color: white;
+    text-align: justify;
+    padding: 1em;
 }
