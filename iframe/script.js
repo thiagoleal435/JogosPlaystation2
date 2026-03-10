@@ -59,7 +59,7 @@ function atras(){
     i=2;
     }
     else if (i == 2){
-    document.all.teste.src='../godOfWar2/godOfWar2.html';
+    document.all.teste.src='../godOfWar2/godOfWar.html';
     i=1;
     }
     else{
