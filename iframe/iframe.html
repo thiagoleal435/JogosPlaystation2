@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Iframe de Jogos</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="./script.js" defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv='Page-Enter' content='revealTrans(Duration=2.0,Transition=23)'>
+  <meta http-equiv='Page-Exit' content='revealTrans(Duration=2.0,Transition=23)'>
+</head>
+
+<body onload='tempo()'>
+  <a href="../index.html" class="link-voltar">
+        <img class="icone-voltar" src="https://img.icons8.com/?size=100&id=LQvs2TUxXdFy&format=png&color=000000" alt="Icone de voltar">
+  </a>
+  <table class="table-iframe">
+    <tr>
+      <th class="titulo-iframe">Iframe</th>
+    </tr>
+    <tr>
+      <td class="data-iframe">
+        <span>
+         <script language="javascript">
+            var data = new Date();
+            var dia = data.getDate();
+            var dias_semana = new Array("Domingo", "Segunda-feira",
+                     "Terça-feira", "Quarta-feira", "Quinta-feira",
+                     "Sexta-feira", "Sábado");
+            var meses = new Array("Janeiro", "Fevereiro", "Março",
+                                  "Abril", "Maio", "Junho", "Julho", "Agosto",
+                                  "Setembro", "Outubro", "Novembro", "Dezembro");
+            var mes = data.getMonth();
+            var diadata = data.getUTCDate();
+            var ano = data.getFullYear();
+            var dia = data.getDay();
+            document.write(dias_semana[dia]+", "+ diadata + " de " + meses[mes] + " de " + ano);
+         </script>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td class = "divisao-iframe">
+        <iframe 
+          allowtransparency="yes" 
+          name= "teste" src="../index.html"
+          width=950 height=752 scrolling="no">
+        </iframe>
+      </td>
+    </tr>
+    <tr>
+      <td class="td-botoes">
+         <input class = "botao-iframe" type="button" value="&lt;&lt; Anterior" onClick="atras()">
+         <input class = "botao-iframe" type="button" value="Próximo >>" onClick="frente()">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

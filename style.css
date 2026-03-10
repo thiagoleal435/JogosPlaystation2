@@ -61,3 +61,44 @@ img{
 .descricao-jogo{
     background-color: white;
 }
+
+/* CSS para pagina com iframe */
+
+.table-iframe{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    border: solid 5px red;
+}
+
+.titulo-iframe{
+    border-bottom: solid 5px white;
+    font-size: 2em;
+}
+
+.data-iframe{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: end;
+}
+
+.divisao-iframe{
+    border: solid 5px red;
+}
+
+.td-botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em 0;
+}
+
+.botao-iframe{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: red;
+}
