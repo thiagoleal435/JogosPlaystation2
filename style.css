@@ -1,24 +1,24 @@
-body{
+body {
     font-family: 'Michroma', sans-serif;
-    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     background-image: url('./background.png');
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 60%;
 }
 
-table{
+table {
     background-color: white;
     border: solid 5px white;
     border-collapse: collapse;
     width: 100%;
 }
 
-.titulo-table{
+.titulo-table {
     background-color: black;
     border-bottom: solid 5px white;
     font-size: 2em;
@@ -26,41 +26,41 @@ table{
     padding: 0.5em 0;
 }
 
-tr{
+tr {
     width: 100%;
 }
 
-.td-imagem{
+.td-imagem {
     width: 50%;
     height: 40em;
     padding: 3%;
     overflow: hidden;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
 }
 
 /* CSS adicional para as páginas isoladas */
 
-.link-voltar{
+.link-voltar {
     position: fixed;
     margin: 0.5em 0 0 0.5em;
 }
 
-.td-imagem-jogo{
+.td-imagem-jogo {
     height: 20em;
     width: 50%;
     padding: 0.5%;
 }
 
-.icone-voltar{
+.icone-voltar {
     height: 4em;
     width: 4em;
 }
 
-.descricao-jogo{
+.descricao-jogo {
     background-color: white;
     text-align: justify;
     padding: 1em;
@@ -68,31 +68,49 @@ img{
 
 /* CSS para pagina com iframe */
 
-.table-iframe{
-    width: 60%;
-    display: flex;
-    justify-content: center;
+.table-iframe {
+    width: 70%;
     margin: 0 auto;
     background-color: white;
     border: solid 5px red;
 }
 
-.titulo-iframe{
+.table-iframe tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-iframe {
+    display: flex;
+    justify-content: center;
     border-bottom: solid 5px white;
     font-size: 2em;
 }
 
-.data-iframe{
+.data-iframe {
+    display: flex;
+    justify-content: end;
     font-size: 1.5em;
     font-weight: bold;
     text-align: end;
 }
 
-.divisao-iframe{
+.divisao-iframe {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
     border: solid 5px red;
 }
 
-.td-botoes{
+.divisao-iframe iframe {
+    width: 100%;
+    height: 82vh;
+}
+
+.td-botoes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +118,7 @@ img{
     margin: 0.5em 0;
 }
 
-.botao-iframe{
+.botao-iframe {
     font-size: 1.5em;
     font-weight: bold;
     padding: 0.5em;

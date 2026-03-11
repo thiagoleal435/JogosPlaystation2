@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Iframe de Jogos</title>
   <link rel="stylesheet" href="../style.css">
@@ -11,7 +12,8 @@
 
 <body onload='tempo()'>
   <a href="../index.html" class="link-voltar">
-        <img class="icone-voltar" src="https://img.icons8.com/?size=100&id=LQvs2TUxXdFy&format=png&color=000000" alt="Icone de voltar">
+    <img class="icone-voltar" src="https://img.icons8.com/?size=100&id=LQvs2TUxXdFy&format=png&color=000000"
+      alt="Icone de voltar">
   </a>
   <table class="table-iframe">
     <tr>
@@ -20,39 +22,38 @@
     <tr>
       <td class="data-iframe">
         <span>
-         <script language="javascript">
+          <script language="javascript">
             var data = new Date();
             var dia = data.getDate();
             var dias_semana = new Array("Domingo", "Segunda-feira",
-                     "Terça-feira", "Quarta-feira", "Quinta-feira",
-                     "Sexta-feira", "Sábado");
+              "Terça-feira", "Quarta-feira", "Quinta-feira",
+              "Sexta-feira", "Sábado");
             var meses = new Array("Janeiro", "Fevereiro", "Março",
-                                  "Abril", "Maio", "Junho", "Julho", "Agosto",
-                                  "Setembro", "Outubro", "Novembro", "Dezembro");
+              "Abril", "Maio", "Junho", "Julho", "Agosto",
+              "Setembro", "Outubro", "Novembro", "Dezembro");
             var mes = data.getMonth();
             var diadata = data.getUTCDate();
             var ano = data.getFullYear();
             var dia = data.getDay();
-            document.write(dias_semana[dia]+", "+ diadata + " de " + meses[mes] + " de " + ano);
-         </script>
+            document.write(dias_semana[dia] + ", " + diadata + " de " + meses[mes] + " de " + ano);
+          </script>
         </span>
       </td>
     </tr>
     <tr>
-      <td class = "divisao-iframe">
-        <iframe 
-          allowtransparency="yes" 
-          name= "teste" src="../index.html"
-          width=950 height=752 scrolling="no">
+      <td class="divisao-iframe">
+        <iframe allowtransparency="yes" name="teste" src="../index.html?only_table=true" scrolling="no" width="100%"
+          height="100%" title="Iframe de Jogos" frameborder="0">
         </iframe>
       </td>
     </tr>
     <tr>
       <td class="td-botoes">
-         <input class = "botao-iframe" type="button" value="&lt;&lt; Anterior" onClick="atras()">
-         <input class = "botao-iframe" type="button" value="Próximo >>" onClick="frente()">
+        <input class="botao-iframe" type="button" value="&lt;&lt; Anterior" onClick="atras()">
+        <input class="botao-iframe" type="button" value="Próximo >>" onClick="frente()">
       </td>
     </tr>
   </table>
 </body>
+
 </html>
